@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Route, Routes } from "react-router-dom";
+import { RoutePages } from "../components";
 import Dashboard from "../components/Dashboard";
 import AppHeaderTop from "./AppHeaderTop";
 import AppSideBar from "./AppSideBar";
@@ -26,7 +27,15 @@ const AuthLayout = () => {
           <main className="content">
             <Routes>
               <Route path="/" element={<Dashboard />} />
-            </Routes>
+              <Route path="/user" element={<RoutePages />} />
+              <Route path="/product" element={<RoutePages />} />
+              <Route path="/test" element={<RoutePages />} />
+              <Route path="/template" element={<RoutePages />} />
+              <Route path="/inittest" element={<RoutePages />} />
+              <Route path="/report1" element={<RoutePages />} />
+              <Route path="/report2" element={<RoutePages />} />
+              <Route path="/report3" element={<RoutePages />} />
+              </Routes>
           </main>
         </div>
       </div>

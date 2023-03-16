@@ -18,130 +18,51 @@ const AppSideMenu = () => {
           <ul className="sidebar-dropdown list-unstyled collapse show">
             <li className="sidebar-item">
               <Link
-                to="/app/vehicle"
+                to="/app/user"
                 className="text-decoration-none sidebar-link"
+                state={'USER'}
               >
-                Vehicle
+                {`User`}
               </Link>
             </li>
 
             <li className="sidebar-item">
               <Link
-                to="/app/routemaster"
+                to="/app/product"
                 className="text-decoration-none sidebar-link"
+                state={'PRODUCT'}
               >
-                Rate
+                {`Product`}
               </Link>
             </li>
 
             <li className="sidebar-item">
               <Link
-                to="/app/driver"
+                to="/app/test"
                 className="text-decoration-none sidebar-link"
+                state={'TEST MASTER'}
               >
-                Driver
+                {`Product Test`}
               </Link>
             </li>
 
             <li className="sidebar-item">
               <Link
-                to="/app/customer"
+                to="/app/template"
                 className="text-decoration-none sidebar-link"
+                state={'TEMPLATE'}
               >
-                Party
+                {`Template`}
               </Link>
             </li>
           </ul>
         </Panel>
-        <Panel
-          header={
-            <div>
-              <i className="fa-solid fa-truck-front pe-3"></i>
-              {`Trip Master`}
-            </div>
-          }
-          className="themesub-item"
-        >
-          <ul className="sidebar-dropdown list-unstyled collapse show">
-            {/* <li className="sidebar-item">
-              <Link
-                to="/app/trip/expense"
-                className="text-decoration-none sidebar-link"
-              >
-                Expense Master
-              </Link>
-            </li> */}
 
-            <li className="sidebar-item">
-              <Link
-                to="/app/trip"
-                className="text-decoration-none sidebar-link"
-              >
-                Trip
-              </Link>
-            </li>
-          </ul>
-        </Panel>
-        <Panel
-          header={
-            <div>
-              <i className="fa-solid fa-store pe-3"></i>
-              {`Store`}
-            </div>
-          }
-          className="themesub-item"
-        >
-          <ul className="sidebar-dropdown list-unstyled collapse show">
-            <li className="sidebar-item active">
-              <li className="sidebar-item">
-                <Link
-                  to="/app/store/item"
-                  className="text-decoration-none sidebar-link"
-                >
-                  Items
-                </Link>
-              </li>
-              <li className="sidebar-item">
-                <Link
-                  to="/app/store/voucher"
-                  className="text-decoration-none sidebar-link"
-                >
-                  Purchase Voucher
-                </Link>
-              </li>
-              <li className="sidebar-item">
-                <Link
-                  to="/app/store/issueitem"
-                  className="text-decoration-none sidebar-link"
-                >
-                  Issue Items
-                </Link>
-              </li>
-              <li className="sidebar-item">
-                <Link
-                  to="/app/toll"
-                  className="text-decoration-none sidebar-link"
-                >
-                  Toll
-                </Link>
-              </li>
-
-              <li className="sidebar-item">
-                <Link
-                  to="/app/store/othervoucherslist"
-                  className="text-decoration-none sidebar-link"
-                >
-                  Other Vouchers
-                </Link>
-              </li>
-            </li>
-          </ul>
-        </Panel>
         <Panel
           header={
             <div>
               <i className="fa-solid fa-file-invoice pe-3"></i>
-              {` Accounts`}
+              {` Transaction`}
             </div>
           }
           className="themesub-item"
@@ -150,24 +71,13 @@ const AppSideMenu = () => {
             <li className="sidebar-item active">
               <li className="sidebar-item">
                 <Link
-                  to="/app/trip/ledgeraccount"
+                  to="/app/inittest"
                   className="text-decoration-none sidebar-link"
+                  state={'START TEST'}
                 >
-                  Ledger Accounts
+                  {`Initiate Test`}
                 </Link>
               </li>
-              <li className="sidebar-item">
-                <Link
-                  to="/app/trip/LedgerAccountView"
-                  className="text-decoration-none sidebar-link"
-                >
-                  Ledger Accounts View
-                </Link>
-              </li>
-
-              {/* <Link to="#" className="text-decoration-none sidebar-link">
-                P&L
-              </Link> */}
             </li>
           </ul>
         </Panel>
@@ -183,38 +93,27 @@ const AppSideMenu = () => {
           <ul className="sidebar-dropdown list-unstyled collapse show">
             <li className="sidebar-item active">
               <Link
-                to="/app/trip/settlementreport"
+                to="/app/report1"
                 className="text-decoration-none sidebar-link"
+                state={'REPORT 1'}
               >
-                {`Settlement Report`}
+                {`Report 1`}
               </Link>
 
               <Link
-                to="/app/trip/vehicleexpreport"
+                to="/app/report2"
                 className="text-decoration-none sidebar-link"
+                state={'REPORT 2'}
               >
-                {`MIS Report`}
+                {`Report 2`}
               </Link>
 
               <Link
-                to="/app/trip/TripInvoiceList"
+                to="/app/report3"
                 className="text-decoration-none sidebar-link"
+                state={'REPORT 3'}
               >
-                {`Invoice`}
-              </Link>
-
-              <Link
-                to="/app/report/profitloss"
-                className="text-decoration-none sidebar-link"
-              >
-                {`Profit & Loss`}
-              </Link>
-
-              <Link
-                to="/app/report/balancesheet"
-                className="text-decoration-none sidebar-link"
-              >
-                {`Balance Sheet`}
+                {`Report 3`}
               </Link>
             </li>
           </ul>
@@ -239,44 +138,7 @@ const AppSideMenu = () => {
             </li>
           </ul>
         </Panel>
-        <Panel
-          header={
-            <div>
-              <i className="fa-solid fa-truck pe-3"></i>
-              {`Others`}
-            </div>
-          }
-          className="themesub-item"
-        >
-          <ul className="sidebar-dropdown list-unstyled collapse show">
-            <li className="sidebar-item active">
-              <Link
-                to="/app/vehicletracking"
-                className="text-decoration-none sidebar-link"
-              >
-                Vehicle Tracking
-              </Link>
-            </li>
-            <li className="sidebar-item active">
-              <Link
-                to="/app/grid"
-                className="text-decoration-none sidebar-link"
-              >
-                Beta Grid
-              </Link>
-            </li>
-            <li className="sidebar-item active">
-              <Link
-                to="/app/userdash"
-                className="text-decoration-none sidebar-link"
-              >
-                Dashboard (User)
-              </Link>
-            </li>
-          </ul>
-        </Panel>
       </Collapse>
-      // </Panel>
     );
   };
 

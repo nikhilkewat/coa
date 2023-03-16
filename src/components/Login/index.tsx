@@ -90,12 +90,14 @@ const Login = () => {
       <div id="stars3"></div>
       <div className="loginForm">
         <div className="loginForm-header text-center">
-          <img
+          {/* <img
             data-tut="tour__logo"
             src={require("../../Assets/images/vkpatel.png")}
             alt="logo"
             className="logo-img"
-          />
+          /> */}
+          <i className="fa-solid fa-square-poll-vertical fa-3x"></i>
+  
         </div>
 
         <div className="loginForm-body">
